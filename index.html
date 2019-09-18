@@ -32,6 +32,7 @@
       const picker = document.querySelector('.color-picker');
       let currentColor = {'red':255, 'green':0, 'blue': 0};
       
+      //create sliders. 
       Object.keys(currentColor).forEach((color) =>{
         createSlider(color,currentColor[color], update);
 
@@ -43,10 +44,10 @@
 
       colorBox.style.background = `rgb(${red}, ${green}, ${blue})`;
     };
-      // Set oninput callback for each slider
-      sliders.forEach((slider) => slider.oninput = update);
+    
       update();
     </script>
 
   </body>
 </html>
+

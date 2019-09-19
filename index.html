@@ -38,8 +38,8 @@
 
       });
       
-    const update = function(newColor) {
-      currentColor = { ...currentColor, ...newColor }
+    const update = function update(newColor) {
+      currentColor = { ...currentColor, ...newColor };
       const { red, green, blue } = currentColor;
 
       colorBox.style.background = `rgb(${red}, ${green}, ${blue})`;
